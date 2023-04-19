@@ -1,0 +1,17 @@
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\bin\Debug\App-Food-Store.exe.config
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\bin\Debug\App-Food-Store.exe
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\bin\Debug\App-Food-Store.pdb
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\bin\Debug\App-Food-Store.xml
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.vbproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.Resources.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.vbproj.GenerateResource.cache
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.exe
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.xml
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App-Food-Store.pdb
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.Login.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.FormLog.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.FormUser.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.FormGudang.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.FormTransaksi.resources
+C:\Users\Administrator\Documents\LKS 2023\App-Food-Store\App-Food-Store\obj\Debug\App_Food_Store.FormLaporan.resources
