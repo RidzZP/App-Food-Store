@@ -86,9 +86,9 @@ Partial Class FormLaporan
         Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(83, 26)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 29)
+        Me.Label1.Size = New System.Drawing.Size(91, 29)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Gudang"
+        Me.Label1.Text = "Laporan"
         '
         'Label5
         '
@@ -186,11 +186,11 @@ Partial Class FormLaporan
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(455, 9)
+        Me.Label2.Location = New System.Drawing.Point(436, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(144, 29)
+        Me.Label2.Size = New System.Drawing.Size(188, 29)
         Me.Label2.TabIndex = 78
-        Me.Label2.Text = "Kelola Barang"
+        Me.Label2.Text = "Laporan Penjualan"
         '
         'FormLaporan
         '

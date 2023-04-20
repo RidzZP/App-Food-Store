@@ -56,6 +56,7 @@ Partial Class FormTransaksi
         Me.lbKasir = New System.Windows.Forms.Label()
         Me.txtIdBarang = New System.Windows.Forms.TextBox()
         Me.lbIdKasir = New System.Windows.Forms.Label()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.tbKeranjang, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -417,4 +418,5 @@ Partial Class FormTransaksi
     Friend WithEvents lbKasir As Label
     Friend WithEvents txtIdBarang As TextBox
     Friend WithEvents lbIdKasir As Label
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

@@ -77,15 +77,18 @@ Public Class FormUser
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        If txtNama.Text = "" Or txtTelepon.Text = "" Or txtAlamat.Text = "" Or txtUsername.Text = "" Or txtPassword.Text = "" Then
-            MsgBox("Pastikan Kolom Terisi")
-        Else
-            sql = "DELETE FROM tb_user WHERE id_user ='" & txtId.Text & "'"
-            cmd = New SqlCommand(sql, con)
-            cmd.ExecuteNonQuery()
-            MsgBox("Data Berhasil Di Hapus")
-            kosong()
-            viewtable()
+        Dim hasil As DialogResult = MessageBox.Show("Apakah yakin ingin menghapus data ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo)
+        If hasil = DialogResult.Yes Then
+            If txtNama.Text = "" Or txtTelepon.Text = "" Or txtAlamat.Text = "" Or txtUsername.Text = "" Or txtPassword.Text = "" Then
+                MsgBox("Pastikan Kolom Terisi")
+            Else
+                sql = "DELETE FROM tb_user WHERE id_user ='" & txtId.Text & "'"
+                cmd = New SqlCommand(sql, con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Data Berhasil Di Hapus")
+                kosong()
+                viewtable()
+            End If
         End If
     End Sub
 
@@ -123,5 +126,9 @@ Public Class FormUser
 
         Login.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub txtCari_TextChanged(sender As Object, e As EventArgs) Handles txtCari.TextChanged
+
     End Sub
 End Class

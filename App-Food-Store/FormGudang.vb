@@ -86,15 +86,18 @@ Public Class FormGudang
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        If txtKodeBarang.Text = "" Or txtNamaBarang.Text = "" Or txtJumlahBarang.Text = "" Or txtSatuan.Text = "" Or txtHargaSatuan.Text = "" Then
-            MsgBox("Pastikan Semua Terisi")
-        Else
-            sql = "DELETE FROM tb_barang WHERE id_barang ='" & txtId.Text & "'"
-            cmd = New SqlCommand(sql, con)
-            cmd.ExecuteNonQuery()
-            MsgBox("Data Berhasil Di hapus")
-            kosong()
-            viewtable()
+        Dim hasil As DialogResult = MessageBox.Show("Apakah yakin ingin menghapus data ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo)
+        If hasil = DialogResult.Yes Then
+            If txtKodeBarang.Text = "" Or txtNamaBarang.Text = "" Or txtJumlahBarang.Text = "" Or txtSatuan.Text = "" Or txtHargaSatuan.Text = "" Then
+                MsgBox("Pastikan Semua Terisi")
+            Else
+                sql = "DELETE FROM tb_barang WHERE id_barang ='" & txtId.Text & "'"
+                cmd = New SqlCommand(sql, con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Data Berhasil Di hapus")
+                kosong()
+                viewtable()
+            End If
         End If
     End Sub
 
@@ -120,5 +123,25 @@ Public Class FormGudang
 
         Login.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub txtCari_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCari.KeyPress
+        If txtCari.Text = "" Then
+            viewtable()
+        Else
+            sql = "SELECT * FROM tb_barang WHERE (nama_barang LIKE '%" & txtCari.Text & "%')"
+            da = New SqlDataAdapter(sql, con)
+            ds = New DataSet
+            da.Fill(ds, "tb_barang")
+            tbBarang.DataSource = ds.Tables("tb_barang")
+        End If
+    End Sub
+
+    Private Sub txtJumlahBarang_TextChanged(sender As Object, e As EventArgs) Handles txtJumlahBarang.TextChanged
+
+    End Sub
+
+    Private Sub txtHargaSatuan_TextChanged(sender As Object, e As EventArgs) Handles txtHargaSatuan.TextChanged
+
     End Sub
 End Class

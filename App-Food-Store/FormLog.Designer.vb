@@ -45,7 +45,7 @@ Partial Class FormLog
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.Panel1.Controls.Add(Me.btnLogout)
         Me.Panel1.Controls.Add(Me.btnLaporan)
         Me.Panel1.Controls.Add(Me.btnUser)
@@ -57,7 +57,7 @@ Partial Class FormLog
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnLogout.BackColor = System.Drawing.Color.SkyBlue
         Me.btnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogout.Location = New System.Drawing.Point(32, 328)
         Me.btnLogout.Name = "btnLogout"
@@ -68,7 +68,7 @@ Partial Class FormLog
         '
         'btnLaporan
         '
-        Me.btnLaporan.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnLaporan.BackColor = System.Drawing.Color.SkyBlue
         Me.btnLaporan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLaporan.Location = New System.Drawing.Point(32, 282)
         Me.btnLaporan.Name = "btnLaporan"
@@ -79,7 +79,7 @@ Partial Class FormLog
         '
         'btnUser
         '
-        Me.btnUser.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnUser.BackColor = System.Drawing.Color.SkyBlue
         Me.btnUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUser.Location = New System.Drawing.Point(32, 238)
         Me.btnUser.Name = "btnUser"
@@ -127,7 +127,7 @@ Partial Class FormLog
         '
         'btnFilter
         '
-        Me.btnFilter.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnFilter.BackColor = System.Drawing.Color.SkyBlue
         Me.btnFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnFilter.Location = New System.Drawing.Point(501, 94)
         Me.btnFilter.Name = "btnFilter"

@@ -32,4 +32,27 @@ Public Class FormLaporan
         Loop
         dr.Close()
     End Sub
+
+    Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
+
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        ' Simpan aktivitas logout ke database
+        Dim waktu As DateTime = DateTime.Now
+        Dim aktivitas As String = "Logout"
+        Dim id_user As Integer = GlobalVariable.logUserId
+        Dim queryLog As String = "INSERT INTO tb_log (waktu, aktivitas, id_user) VALUES (@waktu, @aktivitas, @id_user)"
+        Using cmdLog As New SqlCommand(queryLog, con)
+            cmdLog.Parameters.AddWithValue("@waktu", waktu)
+            cmdLog.Parameters.AddWithValue("@aktivitas", aktivitas)
+            cmdLog.Parameters.AddWithValue("@id_user", id_user)
+            cmdLog.ExecuteNonQuery()
+        End Using
+
+        GlobalVariable.logUserId = 0
+
+        Login.Show()
+        Me.Hide()
+    End Sub
 End Class
